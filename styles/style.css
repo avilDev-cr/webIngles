@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% de la altura de la ventana del navegador */
+    margin: 0;
+    position: relative; /* Establece la posición relativa para el cuerpo */
+}
+
+
+nav{
+    background-color: #000000;
+    padding: 10px;
+    top: auto;
+  
+}
+ul{
+display: flex;
+justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color: #0a33ea;
+    }
+}
+
+main{
+    flex-grow: 1; /* Permite que el contenido principal crezca y se expanda para llenar el espacio restante */
+    padding: 10px;
+    margin: 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0; /* Evita que el pie de página se encoja cuando hay poco contenido */
+    position: absolute; /* Establece la posición absoluta para el footer */
+    bottom: 0; /* Fija el footer en la parte inferior de la página */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho de la página */
+}
