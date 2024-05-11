@@ -28,8 +28,8 @@ header {
 main {
 
   grid-area: main;
-  padding: 20px;
-  margin: 30px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .card{
@@ -42,8 +42,8 @@ main {
 aside {
   grid-area: aside;
   background-color: #f9f9f9;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
 nav {
