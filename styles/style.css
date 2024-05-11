@@ -1,48 +1,183 @@
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% de la altura de la ventana del navegador */
-    margin: 0;
-    position: relative; /* Establece la posición relativa para el cuerpo */
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-
-nav{
-    background-color: #000000;
-    padding: 10px;
-    top: auto;
-  
-}
-ul{
-display: flex;
-justify-content: space-around;
-    list-style: none;
-    padding: 0;
+header {
+  grid-area: header;
+  background-color: #333;
+  color: white;
+  padding: 8px;
 }
 
-a{
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    &:hover{
-        color: #0a33ea;
-    }
+main {
+
+  grid-area: main;
+  padding: 20px;
+  margin: 30px;
 }
 
-main{
-    flex-grow: 1; /* Permite que el contenido principal crezca y se expanda para llenar el espacio restante */
-    padding: 10px;
-    margin: 0;
+.card{
+  border-radius: 5px;
+  margin-bottom: 15px;
+  flex-direction: column;
+  background-color: #78c147;
+  padding: 100px ;
+}
+aside {
+  grid-area: aside;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
 }
 
+nav {
+  background-color: #333;
+  font-size: 25px;
+}
+nav ul {
+  list-style: none;
+li {
+    margin-bottom: 10px;
+  }
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+nav a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+nav a:hover {
+  color: #0a33ea;
+}
+footer a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: #0a33ea;
+  }
+}
 
+#quiero-ser-tutor {
+  background-color: whitesmoke;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: -4px 4px 46px 7px rgba(0, 0, 0, 0.5);
+}
+
+#quiero-ser-tutor label {
+  display: block;
+  margin: 10px;
+}
+
+#quiero-ser-tutor input {
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #cccbcbf6;
+  padding: 5px 15px;
+  margin: 10px;
+}
+#quiero-ser-tutor textarea {
+  border-radius: 3px;
+  padding: 30px 70px;
+  margin: 10px;
+}
+#quiero-ser-tutor .enviar {
+  background-color: #0c8915;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  width: 150px;
+}
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    flex-shrink: 0; /* Evita que el pie de página se encoja cuando hay poco contenido */
-    position: absolute; /* Establece la posición absoluta para el footer */
-    bottom: 0; /* Fija el footer en la parte inferior de la página */
-    width: 100%; /* Asegura que el footer ocupe todo el ancho de la página */
+  grid-area: footer;
+  clear: both;
+  background-color: #333;
+  color: white;
+  flex-shrink: 0; /* Evita que el pie de página se encoja cuando hay poco contenido */
+  position: relative; /* Establece la posición absoluta para el footer */
+  width: 100%;
+  bottom: 0; /* Fija el footer en la parte inferior de la página */
+  /* Asegura que el footer ocupe todo el ancho de la página */
+}
+.footer-container {
+  padding: 50px 20px;
+  gap: 20px;
+}
+
+.footer-column ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  padding: 6px 0px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #333;
+  color: #ccc;
+  padding: 0px 20px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    grid-template-areas:
+      "header header"
+      "main aside"
+      "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 300px;
+  }
+
+  nav,
+  main,
+  footer {
+    flex-direction: row; /* Change to horizontal layout on larger screens */
+    .footer-column {
+      flex-basis: 20%;
+    }
+  }
+  .card{
+    display: inline-block;
+    margin: 2px;
+    flex-direction: column;
+    background-color: #a44848;
+    padding: 50px ;
+  }
+  nav ul,
+  .footer-container {
+    display: flex;
+    justify-content: space-around; /* Distribute elements evenly */
+  }
+}
+.footer-column {
+  margin-top: 50px;
 }
