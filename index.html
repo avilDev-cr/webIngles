@@ -1,82 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EnglishResources</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+  </head>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="comunidad.html">Comunidad</a></li>
-                <li><a href="tutores.html">Tutores</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-        </nav>
+  <body>
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="tutores.html">Tutores</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <h1>Recursos para aprender inglés</h1>
-        <p>Encuentra aquí los mejores recursos para mejorar tu inglés</p>
-    <main>
-        
+    <main class="main">
+      <h1>Recursos para aprender inglés</h1>
+      <p>Encuentra aquí recursos para mejorar tu inglés</p>
 
-        <section id="cursos">
-            <h2>Videos por tema</h2>
-            <!-- Contenido de cursos en línea -->
-        </section>
+      <section class="card" id="cursos">
+        <h2><a href="/webIngles/pages/videos.html">Recursos en video</a></h2>
+        <!-- Contenido de cursos en línea -->
+      </section>
 
-        <section id="cursos">
-            <h2>Cursos en línea</h2>
-            <!-- Contenido de cursos en línea -->
-        </section>
-        
-        <section id="libros">
-            <h2>Libros recomendados</h2>
-            <!-- Contenido de libros recomendados -->
-        </section>
-        
-        <section id="aplicaciones">
-            <h2>Aplicaciones útiles</h2>
-            <!-- Contenido de aplicaciones útiles -->
-        </section>
-        
-        <section id="comunidad">
-            <h2>Comunidad</h2>
-            <!-- Contenido de la comunidad -->
-        </section>
+      <section class="card" id="flashcards">
+        <h2>Flashcards</h2>
+        <!-- Contenido de cursos en línea -->
+      </section>
+
+      <section class="card" id="libros">
+        <h2>Libros recomendados</h2>
+        <!-- Contenido de libros recomendados -->
+      </section>
+
+      <section class="card" id="aplicaciones">
+        <h2>Aplicaciones útiles</h2>
+        <!-- Contenido de aplicaciones útiles -->
+      </section>
+
+      <section class="card" id="comunidad">
+        <h2>Comunidad</h2>
+        <!-- Contenido de la comunidad -->
+      </section>
+
+      <section id="quiero-ser-tutor">
+        <h2>¿Quieres ser tutor?</h2>
+        <p>Complete este formulario de inscripción</p>
+        <form id="quiero-ser-tutor-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required /><br />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required /><br />
+          <label for="number">Número de teléfono</label>
+          <input type="number" id="number" name="number" required /><br />
+          <label for="experiencia">Experiencia previa</label>
+          <textarea id="experiencia" name="experiencia" required></textarea
+          ><br />
+          <!-- Otros campos según tu necesidad -->
+          <button class="enviar" type="submit">Enviar</button>
+        </form>
+      </section>
     </main>
-    
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>Recursos</h3>
-                <ul>
-                    <li><a href="#">Cursos en línea</a></li>
-                    <li><a href="#">Libros recomendados</a></li>
-                    <li><a href="#">Aplicaciones útiles</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Comunidad</h3>
-                <ul>
-                    <li><a href="#">Foros de discusión</a></li>
-                    <li><a href="#">Eventos locales</a></li>
-                    <li><a href="#">Grupos de estudio</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Sobre Nosotros</h3>
-                <p>AvilDev.</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 EnlishResources-AvilDev</p>
-        </div>
-    </footer>
 
-</body>
+    <aside class="aside">
+      <h2>Anuncio importante</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo
+        eu nunc dictum blandit.
+      </p>
+    </aside>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="#">Cursos en línea</a></li>
+            <li><a href="#">Libros recomendados</a></li>
+            <li><a href="#">Aplicaciones útiles</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Comunidad</h3>
+          <ul>
+            <li><a href="#">Foros de discusión</a></li>
+            <li><a href="#">Eventos locales</a></li>
+            <li><a href="#">Grupos de estudio</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Tutorías</h3>
+          <p>
+            ¿Quieres ser tutor?
+            <a href="quiero-ser-tutor.html">Haz clic aquí</a>
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="tel:+50687501596">+506 87501596</a></li>
+            <li>
+              <a href="mailto:info@example.com">andresaviles@icloud.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 EnlishResources-AvilDev</p>
+      </div>
+    </footer>
+  </body>
 </html>
