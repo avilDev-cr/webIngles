@@ -37,7 +37,7 @@ main {
   margin-bottom: 15px;
   flex-direction: column;
   background-color: #78c147;
-  padding: 100px ;
+  padding: 90px ;
 }
 aside {
   grid-area: aside;
