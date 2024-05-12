@@ -31,7 +31,7 @@ main {
   grid-area: main;
   padding: 10px;
   margin: 10px;
-  width: 90%;
+  width: calc(100% - 33px);
 }
 .imgvideos{
   width: 100%;
@@ -49,6 +49,7 @@ aside {
   background-color: #f9f9f9;
   padding: 10px;
   margin: 10px;
+
 }
 
 nav {
