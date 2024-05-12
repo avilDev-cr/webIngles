@@ -31,7 +31,7 @@ main {
 
   grid-area: main;
   padding: 10px;
-  width: 85%;
+  width: 90%;
 
   
 }
@@ -50,7 +50,7 @@ aside {
   grid-area: aside;
   background-color: #f9f9f9;
   padding: 10px;
-  width: 85%;
+  width: 90%;
 
 }
 
@@ -111,7 +111,7 @@ footer a {
   width: 120px;
 }
 #email {
-  width: 250px;
+  width: 300px;
 }
 #experiencia {
   border-radius: 3px;
