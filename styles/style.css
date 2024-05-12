@@ -24,17 +24,19 @@ header {
   background-color: #333;
   color: white;
   padding: 0px;
+  width: 90%;
 }
 
 main {
 
   grid-area: main;
   padding: 10px;
-  margin: 10px;
+  width: 80%;
+
   
 }
 .imgvideos{
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
 }
@@ -49,7 +51,7 @@ aside {
   background-color: #f9f9f9;
   margin-left: 20px;
   padding: 5px;
-  width: 90%;
+  width: 80%;
 
 }
 
@@ -141,7 +143,7 @@ footer {
   color: white;
   flex-shrink: 0; /* Evita que el pie de página se encoja cuando hay poco contenido */
   position: relative; /* Establece la posición absoluta para el footer */
-  width: 100%;
+  width: 90%;
   bottom: 0; /* Fija el footer en la parte inferior de la página */
   /* Asegura que el footer ocupe todo el ancho de la página */
 }
