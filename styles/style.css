@@ -16,13 +16,14 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
+
 }
 
 header {
   grid-area: header;
   background-color: #333;
   color: white;
-  padding: 8px;
+  padding: 0px;
 }
 
 main {
@@ -30,14 +31,18 @@ main {
   grid-area: main;
   padding: 10px;
   margin: 10px;
+  width: 90%;
 }
-
+.imgvideos{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .card{
   border-radius: 5px;
   margin-bottom: 15px;
-  flex-direction: column;
   background-color: #78c147;
-  padding: 90px ;
+  padding: 200px 80px ;
 }
 aside {
   grid-area: aside;
@@ -64,7 +69,7 @@ nav a {
   list-style: none;
   text-decoration: none;
   color: white;
-  margin-bottom: 10px;
+
 }
 nav a:hover {
   color: #0a33ea;
@@ -82,6 +87,7 @@ footer a {
   background-color: whitesmoke;
   color: black;
   margin-top: 10px;
+
   margin-bottom: 10px;
   padding: 30px;
   border-radius: 5px;
@@ -97,14 +103,25 @@ footer a {
   border-radius: 3px;
   border-width: 1px;
   border-color: #cccbcbf6;
-  padding: 5px 15px;
-  margin: 10px;
+  padding: 5px 3px;
+  margin: 5px;
 }
-#quiero-ser-tutor textarea {
+#email {
+  width: 250px;
+}
+#experiencia {
   border-radius: 3px;
-  padding: 30px 70px;
+  width: 350px;
+  height: 150px;
   margin: 10px;
 }
+.nombreapellido{
+  display: flex;
+  flex-direction: row;
+
+
+}
+
 #quiero-ser-tutor .enviar {
   background-color: #0c8915;
   color: white;
